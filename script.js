@@ -13,7 +13,7 @@
         high_card: "https://prog2700.onrender.com/pokerhandtest/highcard"
       };
     function pickFiveCards() {
-        fetch(pokerHands.three_of_a_kind)
+        fetch("https://www.deckofcardsapi.com/api/deck/new/draw/?count=5")
             .then(response => response.json())
             .then(json => {
                 console.log(json);
